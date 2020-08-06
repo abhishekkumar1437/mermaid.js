@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/mermaid@8.6.0/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <title>flow-chart of relational database</title>
+  </head>
+  <body>
+      <div class="row">
+          <div class="container-fluid">
+      <div class="mermaid">
+    graph TD
+        c[company]-->|has|d[department]-->|has|p[pay_grade]-->Determines-->P[payroll]-->receipts-->e[employee]-->|has|department
+        c-->company_id
+        c-->comp_name
+        c-->comp_address
+        c-->Contact_no
+        d-->dept_id
+        d-->dept_name
+        p-->grade_pf
+        p-->grade_name
+        p-->grade_basic
+        p-->grade_da
+        p-->grade_ta
+        p-->grade_bonus
+        p-->grade_id
+        P-->emp_net_salary
+        P-->reinbursment-date
+        P-->emp_gross
+        P-->emp_salary_year
+        p-->emp_salary-month
+        P-->emp_id
+        P-->Transaction_id
+        e-->emp_mobile_no
+        e-->emp_state
+        e-->emp_city
+        e-->emp_dob
+        e-->emp_name
+        e-->emp-id
+        e-->d
+      </div>
+      </div>
+      </div>
+  </body>
+</html>
